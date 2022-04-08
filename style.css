@@ -14,8 +14,9 @@
     min-height: 600px;
     max-height: 756px;
     /* выше установили ограничения для секции */
- 
-    div {
+}
+
+.header div {
     border: 1px solid red;
  }
 
@@ -41,9 +42,7 @@
     padding-bottom: 30px;
 }
 
-.header__link {
-
-}
+.header__link {}
 
 .header__main-illustration {
    width: 765px;
