@@ -50,11 +50,12 @@
    display: flex;
 }
 
-./* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
     height: 568px;
     width: 568px;
     background-color: blue;
     display: flex;
     padding-top: 64px;
+    position: relative;
   }
