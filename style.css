@@ -42,7 +42,9 @@
     padding-bottom: 30px;
 }
 
-.header__link {}
+.header__link {
+    color: blue;
+}
 
 .header__main-illustration {
    width: 765px;
@@ -56,6 +58,8 @@
     width: 568px;
     background-color: blue;
     display: flex;
-    padding-top: 64px;
-    position: relative;
+    margin-bottom: 64px;
+    margin-right: 0;
+    position: absolute;
+    justify-content: end;
   }
