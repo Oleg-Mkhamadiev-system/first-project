@@ -67,19 +67,19 @@
     z-index: 1;
     width: 765px;
     height: 608px;
-    margin-right: 0;
+    right: 0;
+    align-self: flex-end;
   }
 
 .header__square-pic {
     display: flex;
-    flex-direction: row;
     position: absolute;
     z-index: 0;
-    background-color: blue;
+    background-color: #2f80ed;
     height: 568px;
     width: 568px;
-    margin-right: 0;
-    margin-top: 64px;
+    top: 64px;
+    right: 0;
   }
 
   /* и элемента с модификатором вида ключ-значение */
