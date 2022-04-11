@@ -16,6 +16,7 @@
     background-color: #f2f2f2;
     display: flex;
     z-index: -1;
+    position: relative;
     /* выше установили ограничения для секции */
 }
 
@@ -28,7 +29,7 @@
     width: 228px;
     height: 32px;
     margin-top: 30px;
-    margin-left: 54px;
+    margin-left: 64px;
   }
   
   .header__title {
