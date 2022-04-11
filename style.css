@@ -55,8 +55,9 @@
     margin-bottom: 30px; 
   }
   
-  .header__link {
-    color: blue;
+  .header__link::before {
+    content:  ;
+    color: #2f80ed;
     display: inline-block;
     position: absolute;
   /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -66,10 +67,11 @@
     display: flex;
     position: absolute;
     z-index: 1;
-    width: 765px;
+    width: 768px;
     height: 608px;
     right: 0;
     align-self: flex-end;
+    box-sizing: border-box;
   }
 
 .header__square-pic {
@@ -83,6 +85,21 @@
     right: 0;
   }
 
+  .two-columns {
+    display: flex;
+    width: 175px;
+    width: 80%;
+    min-width: 784px;
+    margin: 100px 100px;
+  }
+
+  .two-columns div {
+    border: 1px solid blue;
+  }
+
+  .two-columns__brief {
+
+  }
   /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
     width: 200px;
