@@ -56,15 +56,13 @@
   
   .header__link {
     color: blue;
-    display: flex;
+    display: inline-block;
     position: absolute;
   /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
   }
   
   .header__main-illustration {
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
     position: absolute;
     z-index: 1;
     width: 765px;
