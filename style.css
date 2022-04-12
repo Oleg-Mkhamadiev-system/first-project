@@ -19,12 +19,9 @@
     position: relative;
     /* выше установили ограничения для секции */
 }
-
-.header div {
-    border: 1px solid red;
-  }
   
   .logo_place_header {
+    border: 1px solid red;
     position: absolute;
     width: 228px;
     height: 32px;
@@ -33,6 +30,7 @@
   }
   
   .header__title {
+    border: 1px solid red;
     display: flex;
     align-self: center;
     z-index: 2;
@@ -41,9 +39,11 @@
     font-size: 102px;
     font-weight: bold;
     margin-left: 64px;
+    color: #000000;
   }
   
   .header__subtitle {
+    border: 1px solid red;
     position: absolute;
     display: block;
     align-self: flex-end;
@@ -52,7 +52,8 @@
     font-size: 18px;
     font-weight: normal;
     margin-left: 64px;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
+    color: #000000;
   }
   
   .header__link::before {
@@ -64,6 +65,7 @@
   }
   
   .header__main-illustration {
+    border: 1px solid red;
     display: flex;
     position: absolute;
     z-index: 1;
@@ -75,6 +77,7 @@
   }
 
 .header__square-pic {
+    border: 1px solid red;
     display: flex;
     position: absolute;
     z-index: 0;
@@ -85,45 +88,56 @@
     right: 0;
   }
 
+  .description {
+    border: 2px solid red;
+    margin: 0;
+    padding: 100px 100px;
+  }
+
   .two-columns {
+    border: 2px solid blue;
     display: flex;
-    width: 175px;
+    justify-content: center;
     width: 80%;
     min-width: 784px;
-    margin: 100px 100px;
   }
 
   .two-columns__brief {
+    border: 2px solid blue;
+    width: 175px;
     line-height: 1.2;
     font-size: 18px;
-    font-style: normal;
+    font-weight: normal;
+    color: #2f80ed;
+    padding: 0;
   }
 
-  .paragpaph__1 {
+  .two-columns__main-text {
+    border: 2px solid blue;
     line-height: 34px;
     font-size: 24px;
-    font-style: normal;
-    margin-bottom: 30px;
+    font-weight: normal;
+    color: #000000;
+    margin: 0;
   }
 
-  .paragraph__2 {
+  .two-colunms__paragraph {
+    border: 2px solid blue;
+    padding: 0;
+  }
+  
+  .span-accent {
     line-height: 34px;
     font-size: 24px;
-    font-style: bold;
+    font-weight: bold;
+    padding: 30px 30px;
   }
 
-  .paragraph__3 {
-    line-height: 34px;
-    font-size: 24px;
-    font-style: normal;
-    margin-top: 30px;
-  }
-
-  /* и элемента с модификатором вида ключ-значение */
+  /* и элемента с модификатором вида ключ-значение 
 .table__cell_theme_dark {
     width: 200px;
     color: white;
     margin-right: 0;
     margin-top: 80px;
   }
-  
+  */
