@@ -56,7 +56,7 @@
   }
   
   .header__link::before {
-    content:  ;
+    content: " ";
     color: #2f80ed;
     display: inline-block;
     position: absolute;
@@ -67,11 +67,11 @@
     display: flex;
     position: absolute;
     z-index: 1;
-    width: 768px;
+    width: 765px;
     height: 608px;
     right: 0;
-    align-self: flex-end;
-    box-sizing: border-box;
+    bottom: 0;
+    background-size: cover;
   }
 
 .header__square-pic {
@@ -93,13 +93,32 @@
     margin: 100px 100px;
   }
 
-  .two-columns div {
-    border: 1px solid blue;
-  }
-
   .two-columns__brief {
-
+    line-height: 1.2;
+    font-size: 18px;
+    font-style: normal;
   }
+
+  .paragpaph__1 {
+    line-height: 34px;
+    font-size: 24px;
+    font-style: normal;
+    margin-bottom: 30px;
+  }
+
+  .paragraph__2 {
+    line-height: 34px;
+    font-size: 24px;
+    font-style: bold;
+  }
+
+  .paragraph__3 {
+    line-height: 34px;
+    font-size: 24px;
+    font-style: normal;
+    margin-top: 30px;
+  }
+
   /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
     width: 200px;
