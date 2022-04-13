@@ -135,6 +135,19 @@
     /* padding: 30px 30px; */
   }
 
+  .digits {
+    padding: 100px auto 100px auto;
+  }
+
+  .section-title {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+
+  .section-subtitle {
+    width: 60%;
+  }
+
   /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
     width: 200px;
