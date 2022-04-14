@@ -45,15 +45,14 @@
   .header__subtitle {
     border: 1px solid red;
     position: absolute;
-    display: block;
-    align-self: flex-end;
     width: 388px;
     line-height: 25px;
     font-size: 18px;
     font-weight: normal;
-    margin-left: 64px;
-    margin-bottom: 30px;
+    left: 64px;
+    bottom: 30px;
     color: #000000;
+    z-index: 3;
   }
   
   .header__link::before {
@@ -73,8 +72,7 @@
     height: 608px;
     right: 0;
     bottom: 0;
-    object-fit: contain;
-    margin-right: 0;
+    background-size: cover;
   }
 
 .header__square-pic {
@@ -97,12 +95,11 @@
   .two-columns {
     border: 1px solid blue;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     width: 80%;
     min-width: 784px;
     min-height: auto;
-    margin: 100px auto 100px auto;
+    margin: 100px auto 0 auto;
   }
 
   .two-columns__brief {
@@ -114,7 +111,7 @@
     font-weight: normal;
     color: #2f80ed;
     padding: 0;
-    margin: 0;
+    margin-right: auto;
   }
 
   .two-columns__main-text {
@@ -136,20 +133,64 @@
   }
 
   .digits {
-    padding: 100px auto 100px auto;
+    border: 1px solid red;
   }
 
-  .section-title {
+  .digits__section-title {
+    border: 1px solid red;
     width: 60%;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 100px;
     margin-bottom: 20px;
+    justify-content: center;
   }
 
-  .section-subtitle {
+  .digits__section-subtitle {
+    border: 1px solid red;
     width: 60%;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    justify-content: center;
+  }
+
+  .digits__table {
+    border: 1px solid red;
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .digits_table_cell {
+    border: 1px solid red;
+    width: 250px;
+    margin-top: 60px;
+  }
+
+  .digits_table_heading {
+    border: 1px solid red;
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .digits_table_text {
+    border: 1px solid red;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
   }
 
   /* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
+  .table__cell_theme_dark {
     width: 200px;
     color: white;
     margin-right: 0;
