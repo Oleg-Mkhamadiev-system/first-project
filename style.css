@@ -90,6 +90,7 @@
   .description {
     border: 1px solid red;
     margin: 0;
+    background-color: url(http://www.w3.org/2000/svg);
   }
 
   .two-columns {
@@ -119,6 +120,7 @@
     border: 1px solid blue;
     display: inline-block;
     line-height: 34px;
+    min-width: 784px;
     font-size: 24px;
     font-weight: normal;
     color: #000000;
@@ -139,9 +141,10 @@
 
   .digits {
     border: 1px solid red;
+    background-color: url(http://www.w3.org/2000/svg);
   }
 
-  .digits__section-title {
+  .section-title {
     border: 1px solid red;
     display: flex;
     width: 60%;
@@ -152,7 +155,7 @@
     justify-content: center;
   }
 
-  .digits__section-subtitle {
+  .section-subtitle {
     border: 1px solid red;
     display: flex;
     width: 60%;
@@ -168,6 +171,7 @@
     border: 1px solid red;
     width: 1100px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 100px;
@@ -175,26 +179,85 @@
     margin-left: auto;
   }
 
-  .digits_table_cell {
+  .table__cell {
     border: 1px solid red;
     width: 250px;
     margin-top: 60px;
   }
 
-  .digits_table_heading {
+  .table__heading {
     border: 1px solid red;
     margin-top: 0;
-    margin-bottom: 20px;
     line-height: 1.15;
     font-size: 24px;
     font-weight: bold;
   }
 
-  .digits_table_text {
+  .table__text {
     border: 1px solid red;
     line-height: 1.2;
     font-size: 18px;
     font-weight: normal;
+    margin-top: 20px;
+  }
+
+  .feynman {
+    border: 1px solid red;
+    display: flex;
+    height: 890px;
+    background-color: #f2f2f2;
+    z-index: -1;
+  }
+
+  .feynman__title {
+    border: 1px solid red;
+    width: 648px;
+    display: inline-block;
+    justify-content: center;
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: bold;
+    z-index: 1;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .feynman__subtitle {
+    border: 1px solid red;
+    margin-top: 70px;
+    display: inline-block;
+    justify-content: center;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    z-index: 2;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .feynman__link {
+    border: 1px solid red;
+    top: 50%;
+    right: 48px;
+    position: absolute;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    color: #2f80ed;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+  }
+
+  .feynman__image {
+    border: 1px solid red;
+    display: block;
+    width: 867px;
+    height: 637px;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    position: absolute;
   }
 
   /* и элемента с модификатором вида ключ-значение */
