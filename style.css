@@ -136,7 +136,8 @@
     line-height: 34px;
     font-size: 24px;
     font-weight: bold;
-    padding: 30px 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .digits {
@@ -162,7 +163,6 @@
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 0;
   }
 
   .table {
@@ -207,21 +207,28 @@
 
   .feynman__title {
     border: 1px solid red;
+    justify-content: center;
     width: 648px;
     line-height: 1.15;
     font-size: 120px;
     font-weight: bold;
     z-index: 1;
+    position: absolute;
+    margin-top: 100px auto auto;
+    
   }
 
   .feynman__subtitle {
     border: 1px solid red;
-    margin-top: 70px;
+    margin-top: 70px auto auto;
+    justify-content: center;
     align-content: center;
     line-height: 51px;
     font-size: 36px;
     font-weight: normal;
     z-index: 2;
+    position: absolute;
+    top: 50%;
   }
 
   .feynman__link {
@@ -241,7 +248,6 @@
 
   .feynman__image {
     border: 1px solid red;
-    display: block;
     width: 867px;
     height: 637px;
     left: 0;
