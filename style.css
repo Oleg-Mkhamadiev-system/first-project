@@ -58,9 +58,9 @@
   .header__link::before {
     content: ' ';
     color: #2f80ed;
+    text-decoration: none;
     display: inline-block;
     position: absolute;
-    text-decoration: none;
   /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
   }
   
@@ -73,7 +73,7 @@
     bottom: 0;
     position: absolute;
     z-index: 1;
-    background-size: contain;
+    object-fit: cover;
   }
 
 .header__square-pic {
@@ -121,7 +121,6 @@
     font-size: 24px;
     font-weight: normal;
     color: #000000;
-    align-content: space-between;
     margin: 0;
     padding: 0;
   }
@@ -131,8 +130,18 @@
     line-height: 34px;
     font-size: 24px;
     font-weight: bold;
-    padding-top: 30px;
-    padding-bottom: 30px;
+  }
+
+  .two-columns__paragraph_margin-bottom {
+    border: 1px solid red;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .two-columns__paragraph_margin-top {
+    border: 1px solid red;
+    margin-top: 30px;
+    margin-bottom: 0;
   }
 
   .digits {
@@ -161,6 +170,7 @@
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 0;
   }
 
   .table {
@@ -331,16 +341,15 @@
 
   .kaufman__triangle {
     border: 1px solid red;
+    display: flex;
     width: 877px;
     height: 877px;
     position: absolute;
     z-index: 0;
     background-color: black;
-    right: 0;
     top: 0;
-    background-position-x: -210;
-    padding: 0;
-    margin-left: auto;
+    right: -210px;
+    padding-left: 0;
   }
 
   .footer__columns {
