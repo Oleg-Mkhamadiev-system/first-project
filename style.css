@@ -60,9 +60,9 @@
   
   .header__link::before {
     content: ' ';
+    display: inline-block;
     color: #2f80ed;
     text-decoration: none;
-    display: inline-block;
     position: absolute;
   /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
   }
@@ -179,7 +179,7 @@
     margin-bottom: 0;
     margin-right: auto;
     margin-left: auto;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
   }
 
@@ -283,7 +283,7 @@
     padding-bottom: 90px;
     overflow: hidden;
     position: relative;
-    background-color: black;
+    background-color: #1f1f1f;
     justify-content: center;
   }
 
@@ -364,24 +364,35 @@
   }
 
   .footer {
+    display: flex;
     min-height: 350px;
+    padding-top: 60px;
+    padding-right: auto;
+    padding-bottom: 40px;
+    padding-left: auto;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #1f1f1f;
   }
 
   .footer__columns {
     border: 1px solid red;
     width: 90%;
-    flex-basis: 711px;
-    margin: 60px auto 40px;
   }
 
-  .footer__columns_content_copyright {
+  .footer__column_content_copyright {
     border: 1px solid red;
+    flex-basis: 711px;
+  }
+
+  .logo {
+    width: 228px;
+    height: 32px;
   }
 
   .logo_place_footer {
     border: 1px solid red;
-    width: 228px;
-    height: 32px;
+    color: white;
     justify-content: flex-start;
   }
 
@@ -392,6 +403,7 @@
     font-weight: normal;
     left: 0;;
     bottom: 18px;
+    color: white;
   }
 
   .footer__column-heading {
@@ -400,6 +412,7 @@
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
+    color: white;
   }
 
   .footer__column-links {
@@ -407,4 +420,5 @@
     line-height: 30px;
     font-size: 18px;
     font-weight: normal;
+    color: white;
   }
